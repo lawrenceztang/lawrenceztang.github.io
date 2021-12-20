@@ -43,7 +43,7 @@ particlesJS("wrapper", {
   },
   "particles": {
     "color": {
-      "value": "random"
+      "value": "#ffffff"
     },
     "links": {
       "color": {

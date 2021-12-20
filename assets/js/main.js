@@ -4,6 +4,555 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+modes = ["attract", "bounce", "bubble", "connect", "grab", "modes", "push", "remove", "repulse", "slow", "trail"];
+
+animations = [
+	{
+		"background": {
+		  "opacity": 0,
+		  "color": {
+			"value": "#000000"
+		  },
+		  "position": "50% 50%",
+		  "repeat": "no-repeat",
+		  "size": "cover"
+		},
+		"fullScreen": {
+		  "zIndex": 1
+		},
+		"interactivity": {
+		  "events": {
+			"onClick": {
+			  "enable": true,
+			  "mode": "push"
+			},
+			"onDiv": {
+			  "selectors": "#repulse-div",
+			  "mode": "repulse"
+			},
+			"onHover": {
+			  "enable": true,
+			  "mode": "connect",
+			  "parallax": {
+				"force": 60
+			  }
+			}
+		  },
+		  "modes": {
+			"bubble": {
+			  "distance": 400,
+			  "duration": 2,
+			  "opacity": 0.8,
+			  "size": 40
+			},
+			"grab": {
+			  "distance": 400
+			}
+		  }
+		},
+		"particles": {
+		  "color": {
+			"value": "#ffffff"
+		  },
+		  "links": {
+			"color": {
+			  "value": "#ffffff"
+			},
+			"distance": 150,
+			"opacity": 0.4
+		  },
+		  "move": {
+			"attract": {
+			  "rotate": {
+				"x": 600,
+				"y": 1200
+			  }
+			},
+			"enable": true,
+			"outModes": {
+			  "bottom": "out",
+			  "left": "out",
+			  "right": "out",
+			  "top": "out"
+			},
+			"speed": 6
+		  },
+		  "number": {
+			"density": {
+			  "enable": true
+			},
+			"limit": 500,
+			"value": 300
+		  },
+		  "opacity": {
+			"value": 0.5,
+			"animation": {
+			  "speed": 1,
+			  "minimumValue": 0.1
+			}
+		  },
+		  "size": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 1,
+			  "max": 5
+			},
+			"animation": {
+			  "speed": 40,
+			  "minimumValue": 0.1
+			}
+		  }
+		}
+	},
+
+	{
+		"background": {
+		  "color": {
+			"value": "#000000"
+		  },
+		  "position": "50% 50%",
+		  "repeat": "no-repeat",
+		  "size": "cover",
+		  "opacity": 0
+		},
+		"fullScreen": {
+		  "zIndex": 1
+		},
+		"interactivity": {
+		  "events": {
+			"onClick": {
+			  "mode": "push"
+			},
+			"onHover": {
+			  "enable": true,
+			  "mode": "bubble"
+			}
+		  },
+		  "modes": {
+			"bubble": {
+			  "distance": 400,
+			  "duration": 2,
+			  "opacity": 0.8,
+			  "color": {
+				"value": "#ff0000"
+			  },
+			  "size": 40
+			},
+			"grab": {
+			  "distance": 400
+			}
+		  }
+		},
+		"particles": {
+		  "color": {
+			"value": "#1b1e34"
+		  },
+		  "links": {
+			"color": {
+			  "value": "#ffffff"
+			},
+			"distance": 200,
+			"width": 2
+		  },
+		  "move": {
+			"attract": {
+			  "rotate": {
+				"x": 600,
+				"y": 1200
+			  }
+			},
+			"enable": true,
+			"outModes": {
+			  "bottom": "out",
+			  "left": "out",
+			  "right": "out",
+			  "top": "out"
+			},
+			"speed": 8
+		  },
+		  "number": {
+			"density": {
+			  "enable": true
+			},
+			"value": 6
+		  },
+		  "opacity": {
+			"random": {
+			  "enable": true,
+			  "minimumValue": 0.3
+			},
+			"value": {
+			  "min": 0.3,
+			  "max": 0.5
+			},
+			"animation": {
+			  "speed": 1,
+			  "minimumValue": 0.1
+			}
+		  },
+		  "shape": {
+			"options": {
+			  "polygon": {
+				"sides": 6
+			  },
+			  "star": {
+				"sides": 6
+			  }
+			},
+			"type": "polygon"
+		  },
+		  "size": {
+			"random": {
+			  "enable": true,
+			  "minimumValue": 100
+			},
+			"value": {
+			  "min": 100,
+			  "max": 160
+			},
+			"animation": {
+			  "minimumValue": 40
+			}
+		  }
+		}
+	},
+
+	{
+		"background": {
+		  "color": {
+			"value": "#000000"
+		  },
+		  "position": "50% 50%",
+		  "repeat": "no-repeat",
+		  "size": "cover",
+		  "opacity": 0
+		},
+		"fullScreen": {
+		  "zIndex": 1
+		},
+		"interactivity": {
+		  "events": {
+			"onClick": {
+			  "enable": true,
+			  "mode": "push"
+			},
+			"onHover": {
+			  "enable": true,
+			  "mode": "grab",
+			  "parallax": {
+				"enable": true,
+				"force": 60
+			  }
+			}
+		  },
+		  "modes": {
+			"bubble": {
+			  "distance": 400,
+			  "duration": 2,
+			  "opacity": 0.8,
+			  "size": 40
+			},
+			"grab": {
+			  "distance": 400
+			}
+		  }
+		},
+		"particles": {
+		  "color": {
+			"value": "#ffffff"
+		  },
+		  "links": {
+			"color": {
+			  "value": "#ffffff"
+			},
+			"distance": 150,
+			"enable": true,
+			"opacity": 0.4
+		  },
+		  "move": {
+			"attract": {
+			  "rotate": {
+				"x": 600,
+				"y": 1200
+			  }
+			},
+			"enable": true,
+			"outModes": {
+			  "bottom": "out",
+			  "left": "out",
+			  "right": "out",
+			  "top": "out"
+			}
+		  },
+		  "number": {
+			"density": {
+			  "enable": true
+			}
+		  },
+		  "opacity": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 0.1,
+			  "max": 0.5
+			},
+			"animation": {
+			  "enable": true,
+			  "speed": 3,
+			  "minimumValue": 0.1
+			}
+		  },
+		  "size": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 0.1,
+			  "max": 10
+			},
+			"animation": {
+			  "enable": true,
+			  "speed": 20,
+			  "minimumValue": 0.1
+			}
+		  }
+		}
+	},
+
+	{
+		"background": {
+		  "color": {
+			"value": "#000000"
+		  },
+		  "position": "50% 50%",
+		  "repeat": "no-repeat",
+		  "size": "cover",
+		  "opacity": 0
+		},
+		"fullScreen": {
+		  "zIndex": 1
+		},
+		"fpsLimit": 30,
+		"interactivity": {
+		  "events": {
+			"onClick": {
+			  "enable": true,
+			  "mode": "push"
+			},
+			"onHover": {
+			  "enable": true,
+			  "mode": "repulse",
+			  "parallax": {
+				"force": 60
+			  }
+			}
+		  },
+		  "modes": {
+			"bubble": {
+			  "distance": 400,
+			  "duration": 2,
+			  "opacity": 0.8,
+			  "size": 40
+			},
+			"grab": {
+			  "distance": 400
+			}
+		  }
+		},
+		"particles": {
+		  "color": {
+			"value": "#ffffff"
+		  },
+		  "links": {
+			"color": {
+			  "value": "#ffffff"
+			},
+			"distance": 150,
+			"enable": true,
+			"opacity": 0.4,
+			"shadow": {
+			  "color": {
+				"value": "#000000"
+			  },
+			  "enable": true
+			}
+		  },
+		  "move": {
+			"attract": {
+			  "rotate": {
+				"x": 600,
+				"y": 1200
+			  }
+			},
+			"enable": true,
+			"outModes": {
+			  "bottom": "out",
+			  "left": "out",
+			  "right": "out",
+			  "top": "out"
+			}
+		  },
+		  "number": {
+			"density": {
+			  "enable": true
+			},
+			"value": 80
+		  },
+		  "opacity": {
+			"value": 0.5,
+			"animation": {
+			  "speed": 1,
+			  "minimumValue": 0.1
+			}
+		  },
+		  "shadow": {
+			"blur": 5,
+			"enable": true,
+			"offset": {
+			  "x": 3,
+			  "y": 3
+			}
+		  },
+		  "size": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 1,
+			  "max": 5
+			},
+			"animation": {
+			  "speed": 40,
+			  "minimumValue": 0.1
+			}
+		  }
+		}
+	},
+
+	{
+		"background": {
+		  "color": {
+			"value": "#0d47a1"
+		  },
+		  "position": "50% 50%",
+		  "repeat": "no-repeat",
+		  "size": "cover",
+		  "opacity": 0
+		},
+		"fullScreen": {
+		  "zIndex": 1
+		},
+		"interactivity": {
+		  "events": {
+			"onClick": {
+			  "enable": true,
+			  "mode": "absorber"
+			},
+			"onHover": {
+			  "enable": true,
+			  "mode": "repulse"
+			}
+		  },
+		  "modes": {
+			"bubble": {
+			  "distance": 400,
+			  "duration": 2,
+			  "opacity": 0.8,
+			  "size": 40
+			},
+			"grab": {
+			  "distance": 400
+			},
+			"absorbers": {
+			  "color": {
+				"value": "#ffffff"
+			  },
+			  "draggable": false,
+			  "opacity": 1,
+			  "destroy": true,
+			  "orbits": false,
+			  "size": {
+				"random": {
+				  "enable": true,
+				  "minimumValue": 5
+				},
+				"value": {
+				  "min": 5,
+				  "max": 10
+				},
+				"density": 5,
+				"limit": {
+				  "radius": 50,
+				  "mass": 0
+				}
+			  }
+			}
+		  }
+		},
+		"particles": {
+		  "color": {
+			"value": "#ffffff"
+		  },
+		  "links": {
+			"color": {
+			  "value": "#ffffff"
+			},
+			"distance": 150,
+			"enable": true,
+			"opacity": 0.4
+		  },
+		  "move": {
+			"attract": {
+			  "rotate": {
+				"x": 600,
+				"y": 1200
+			  }
+			},
+			"enable": true,
+			"outModes": {
+			  "bottom": "out",
+			  "left": "out",
+			  "right": "out",
+			  "top": "out"
+			}
+		  },
+		  "number": {
+			"value": 80
+		  },
+		  "opacity": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 0.1,
+			  "max": 0.5
+			},
+			"animation": {
+			  "enable": true,
+			  "speed": 3,
+			  "minimumValue": 0.1
+			}
+		  },
+		  "size": {
+			"random": {
+			  "enable": true
+			},
+			"value": {
+			  "min": 1,
+			  "max": 50
+			},
+			"animation": {
+			  "speed": 20,
+			  "minimumValue": 0.1
+			}
+		  }
+		}
+	}
+];
+
 (function($) {
 
 	var	$window = $(window),
@@ -71,6 +620,17 @@
 
 		// Methods.
 			$main._show = function(id, initial) {
+				var ran = Math.floor(Math.random() * animations.length);
+				var animation = animations[ran];
+				var ran_mode = Math.floor(Math.random() * modes.length);
+				console.log(ran_mode);
+				console.log("Animation" + ran);
+				animation.interactivity.events.onHover.mode = modes[ran_mode];
+				if(ran == 1) {
+					animation.particles.shape.options.polygon.sides = Math.floor(Math.random() * 8);
+				}
+				particlesJS("wrapper", animation)
+				
 
 				var $article = $main_articles.filter('#' + id);
 
@@ -82,7 +642,7 @@
 
 					// Already locked? Speed through "show" steps w/o delays.
 						if (locked || (typeof initial != 'undefined' && initial === true)) {
-
+							
 							// Mark as switching.
 								$body.addClass('is-switching');
 
@@ -307,10 +867,11 @@
 
 		// Events.
 			$body.on('click', function(event) {
-
 				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
+					if ($body.hasClass('is-article-visible')) {
+						console.log("hii");
 						$main._hide(true);
+					}
 
 			});
 
