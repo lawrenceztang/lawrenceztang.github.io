@@ -52,11 +52,11 @@ animations = [
 		},
 		"particles": {
 		  "color": {
-			"value": "#ffffff"
+			"value": "#666666"
 		  },
 		  "links": {
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#666666"
 			},
 			"distance": 150,
 			"opacity": 0.4
@@ -151,7 +151,7 @@ animations = [
 		  },
 		  "links": {
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#666666"
 			},
 			"distance": 200,
 			"width": 2
@@ -261,11 +261,11 @@ animations = [
 		},
 		"particles": {
 		  "color": {
-			"value": "#ffffff"
+			"value": "#666666"
 		  },
 		  "links": {
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#666666"
 			},
 			"distance": 150,
 			"enable": true,
@@ -364,11 +364,11 @@ animations = [
 		},
 		"particles": {
 		  "color": {
-			"value": "#ffffff"
+			"value": "#666666"
 		  },
 		  "links": {
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#666666"
 			},
 			"distance": 150,
 			"enable": true,
@@ -468,7 +468,7 @@ animations = [
 			},
 			"absorbers": {
 			  "color": {
-				"value": "#ffffff"
+				"value": "#666666"
 			  },
 			  "draggable": false,
 			  "opacity": 1,
@@ -494,11 +494,11 @@ animations = [
 		},
 		"particles": {
 		  "color": {
-			"value": "#ffffff"
+			"value": "#666666"
 		  },
 		  "links": {
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#666666"
 			},
 			"distance": 150,
 			"enable": true,
