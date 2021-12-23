@@ -147,7 +147,7 @@ animations = [
 		},
 		"particles": {
 		  "color": {
-			"value": "#1b1e34"
+			"value": "#666666"
 		  },
 		  "links": {
 			"color": {
