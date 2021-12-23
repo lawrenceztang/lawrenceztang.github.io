@@ -28,6 +28,20 @@
     $headers .= "Reply-To: $email_address";
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
-    header('Location: contact-form-thank-you.html');
+    $sender = 'someone@somedomain.tld';
+    $recipient = 'lawrenceztang@gmail.com';
+    $subject = "php mail test";
+    $message = "php test message";
+    $headers = 'From:' . $sender;
+    if (mail($recipient, $subject, $message, $headers))
+    {
+        echo "Message accepted";
+    }
+    else
+    {
+        echo "Error: Message not accepted";
+    }
+    // header('Location: contact-form-thank-you.html');
+    
     }
     ?>
