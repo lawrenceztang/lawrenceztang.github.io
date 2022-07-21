@@ -32,8 +32,9 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#experiences">Experiences</a></li>
-								<li><a href="#projects">Side Projects</a></li>
 								<li><a href="#hobbies">Hobbies</a></li>
+								<li><a href="#projects">Side Projects</a></li>
+								<li><a href="#blog">Blog</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -45,7 +46,7 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/explore.jpg" alt="" /></span>
+								<span class="image main"><img src="images/explore.jpg" alt="" loading="lazy"/></span>
 								<p>My name is Lawrence, and I'm a second year computer science and math student at the University of Chicago. I've lived in Cape Cod, Massachusetts for most of my life, but I've also lived in Evanston, St. Paul, and Berkeley. I love to program, travel, watch TV, play sports, and much more! I hope to go into software engineering and maybe launch a few startups in the future! More importantly, I want to stay healthy, have friends and family, and work towards my career goals. Click on the other tabs to learn more about me.
 							</article>
 
@@ -53,19 +54,19 @@
 							<article id="experiences">
 								<h2 class="major">Experiences</h2>
 								<a href="#experience_3">
-									<span class="image main"><img src="images/hpe.png" alt="" /></span>
+									<span class="image main"><img src="images/hpe.png" alt="" loading="lazy"/></span>
 									<h3>Hewlett-Packard Enterprise</h3>
 									<p>Upcoming, summer 2022!</p>
 								</a>
 								<hr>
 								<a href="#experience_2">
-									<span class="image main"><img src="images/argonne.jpg" alt="" /></span>
+									<span class="image main"><img src="images/argonne.jpg" alt="" loading="lazy"/></span>
 									<h3>Argonne National Laboratory</h3>
 									<p>Demonstrated the capabilities of a robot to automate chemical experiments in a simulated environment.</p>
 								</a>
 								<hr>
 								<a href="#experience_1">
-									<span class="image main"><img src="images/uchicago.jpg" alt="" /></span>
+									<span class="image main"><img src="images/uchicago.jpg" alt="" loading="lazy"/></span>
 									<h3>The HRI Lab at the University of Chicago</h3>
 									<p>Programmed robots using standards of human-robotic interaction research.</p>
 								</a>
@@ -84,7 +85,7 @@
 								<p>Sarah, my supervisor at the HRI Lab, kindly referred me to a position at Argonne for the summer after my first year in college. For most of the summer, I worked with Dr. Young Soo Park and PhD student Derek Vasquez on simulating a robot to conduct chemical experiments in a lab. I was once again thrown in the deep end, as the robotics knowledge needed to do this work was far beyond what I acquired at the HRI Lab. Dr. Park first recommended that I read the MoveIt tutorials, but I found that without background knowledge of Gazebo and RViz, I couldn’t get a good grasp of MoveIt. So I had to become familiar with Gazebo, a popular robotics simulation tool, by doing a series of tutorials in which I learned about urdf files that specify the shape of robot, and controllers and transmissions that allow joints to be controlled using ROS.</p>
 								<p>Once I became familiar with Gazebo, Derek and I were able to create a urdf model of the robot. We then had to program the robot by coordinating its moving base with its arm to be able to manipulate objects. I found a package to autonomously map and navigate the robot’s MiR 200 base in the simulation using its ultrasound sensors. To control the robot’s arm, Derek got MoveIt set up. However, the gripper proved particularly troublesome. It is difficult to position the robot’s arm in such a precise position that the gripper can grab an object. Moreover, it was hard to get enough grip in the simulation to hold onto an object without it sliding through. Eventually, I decided I had to attach the gripper to the object it was grabbing by <h href="https://github.com/pal-robotics/gazebo_ros_link_attacher">programmatically</h> connecting their links. Now, I could navigate the robot and grab objects with it, but I still had to give the robot the ability to locate objects! I started implementing an object location algorithm using AR tags, but its accuracy was questionable and I never got it to work reliably. However, I was able to program the robot to grab and place an object with a predetermined location. </p>
 								<p>The simulation was an important step for our group because we didn’t want to run the physical robot without testing on a simulated one first, as the robot is really powerful and could do some serious damage. I had to focus particularly hard on maintaining good documentation and code style while working on this project so that researchers who had little experience in ROS could use my packages. I also had to communicate well with my supervisor about robotic conventions that I was often previously unaware of, and what he wanted to accomplish. Overall, this was a really tough but rewarding project that I became really dedicated to!</p>
-								<span class="image main"><img src="images/arm.png"/></span>
+								<span class="image main"><img src="images/arm.png" loading="lazy"/></span>
 							</article>
 
 							<article id="experience_1">
@@ -99,12 +100,19 @@
 								<p>The first project involved creating a ROS wrapper around an API used to control Anki’s Vector—a cute robot with a little forklift that can move around and a screen to display facial expressions. I had never even heard of ROS before, so I was worried about being able to contribute. Fortunately, I had a coworker, <a href="https://spencerng.me/">Spencer Ng</a>, who seemed to be a ROS veteran (and expert at programming in general). After he, Sarah, and I had our first lab meeting, I took initiative and asked Spencer if we could have a chat. We talked a bit and arranged times where we could call and work on the project together. I was always a step behind what he did, but he helped me learn the foundations of ROS. He also showed me how to document work in a readme using Markdown, and many other important conventions that come with working on a team. He did the brute of the work, but I made sure to check over what he did and made a few commits to the project repository to make Sarah happy. </p>
 								<p>Over the rest of the year, I gained confidence in my ROS skills. I was able to work individually on writing a ROS wrapper for the Misty robot by Misty Robotics. When I had trouble accessing Misty’s audio input, I narrowed the problem down to a hardware issue. I contacted Misty Robotics about this, and I had a Zoom call with some of their developers to inspect Misty’s hardware. When the problem was still not fixed, I helped connect Sarah to Misty’s team and arrange to return Misty to get it repaired. I was able to make many contributions to the lab later in the year.</p>
 								<p>My work at the HRI lab showed me how important it was to communicate in order to get help. Even though I wasn’t able to contribute to the lab much right away, by communicating with Spencer, I was able to learn from him so I was eventually able to do projects on my own. I also learned that I can grow immensely in just one year. Spencer was only one year ahead of me, but he seemed to be so much more knowledgeable. If a year ago, I saw myself now, I think it’s quite possible that I would’ve been just as amazed. In just the span of one year, I’ve grown so much, making me realize that even when some people seem so much more accomplished or experienced than me, that’s just me in a couple of years as long as I work towards my goals. Finally, maybe the coolest thing about working at the HRI lab was that I got to take Vector to my dorm, where he was quite a sensation with my friends!</p>
-								<span class="image main"><img src="images/hri.jpg" alt="" /></span>
+								<span class="image main"><img src="images/hri.jpg" alt="" loading="lazy"/></span>
 							</article>
 
 						<!-- Side Projects -->
 							<article id="projects">
 								<h2 class="major">Side Projects</h2>
+								<a href="#project_4">
+									<div>
+										<span class="image main"><img src="images/distance_measurement.jpg" alt="" loading="lazy"/></span>
+										<h3>Distance Measurement w/ Camera</h3>
+										<p>An Android app that measures distances with the stereo camera.</p>
+									</div>
+								</a>
 								<hr>
 								<a href="#project_6">
 									<div>
@@ -122,16 +130,9 @@
 									</div>
 								</a>
 								<hr>
-								<a href="#project_4">
-									<div>
-										<span class="image main"><img src="images/distance_measurement.png" alt="" /></span>
-										<h3>Distance Measurement w/ Camera</h3>
-										<p>An Android app that measures distances with the stereo camera.</p>
-									</div>
-								</a>
 								<a href="#project_3">
 									<div>
-										<span class="image main"><img src="images/beat_uncropped.png" alt="" /></span>
+										<span class="image main"><img src="images/beat_uncropped.png" alt="" loading="lazy"/></span>
 										<h3>Beat the Market</h3>
 										<p>An online stock market simulator using historical data. Also comes with automated trading algorithms.</p>
 									</div>
@@ -139,7 +140,7 @@
 								<hr>
 								<a href="#project_2">
 									<div>
-										<span class="image main"><img src="images/popula.jpeg" alt="" /></span>
+										<span class="image main"><img src="images/popula.jpeg" alt="" loading="lazy"/></span>
 										<h3>Popula</h3>
 										<p>An Android app that sends customizable and randomly generated notifications, available in the Google Play Store.</p>
 									</div>
@@ -147,7 +148,7 @@
 								<hr>
 								<a href="#project_1">
 									<div>
-										<span class="image main"><img src="images/chess_uncropped.png" alt="" /></span>
+										<span class="image main"><img src="images/chess_uncropped.png" alt="" loading="lazy"/></span>
 										<h3>Chess Engine</h3>	
 										<p>A chess engine implementing minimax search, written from scratch in Java.</p>
 									</div>
@@ -224,6 +225,26 @@
 							</article>
 
 
+							<article id="project_5">
+								<h2 class="major">Fenyx</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>SQL</li>
+									<li>React</li>
+								</ul>
+
+							</article>
+
+							<article id="project_6">
+								<h2 class="major">Rogue Research</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Wordpress</li>
+								</ul>
+								<p><a href="https://rogue.re">https://rogue.re</a></p>
+								<p>After my friend told me about a freelancing website called Pangaea, I checked it out to look for some programming projects to fill my free time. Some of the positions paid pretty well, so I decided to apply for them. I was politely rejected from the first position I applied for, but to my surprise, I ended up getting the other one I applied for. My boss, Marcelo, gave me some content posted on a bare-bones HTML website and asked me to move it to a WordPress website. Even though I originally sought to gain experience in programming, this project was more art than programming. In fact, I wrote zero lines of code. The experience was a good way to pass time though. I didn't mind sitting there and clicking on a bunch of text boxes and copying text into them and making the colors and images look good. At least I can say that I changed the server the domain name was pointed to, which is kind of technical I guess! Now, I know that I can make WordPress websites pretty easily, which might come in handy now and again.</p>
+							</article>
+
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
@@ -262,21 +283,21 @@
 								<h2 class="major">Hobbies</h2>
 								<a href="#hobby_1">
 									<div>
-										<span class="image main"><img src="images/tennis.jpg" alt="" /></span>
+										<span class="image main"><img src="images/tennis.jpg" alt="" loading="lazy"/></span>
 										<h3>Athletics</h3>	
 									</div>
 								</a>	
 								<hr>
 								<a href="#hobby_2">
 									<div>
-										<span class="image main"><img src="images/intro.jpg" alt="" /></span>
+										<span class="image main"><img src="images/intro.jpg" alt="" loading="lazy"/></span>
 										<h3>Exploration</h3>	
 									</div>
 								</a>	
 								<hr>
 								<a href="#hobby_3">
 									<div>
-										<span class="image main"><img src="images/art.jpg" alt="" /></span>
+										<span class="image main"><img src="images/art.jpg" alt="" loading="lazy"/></span>
 										<h3>Arts</h3>	
 									</div>
 								</a>	
@@ -302,7 +323,71 @@
 						<!-- Blog -->
 						<article id="blog">
 							<h2 class="major">Blog</h2>
+							<a href="#blog_cities">
+								<div>
+									<a href="#cities">
+										<h3>Cities</h3>
+									</a>
+								</div>
+							</a>
+							<hr>
+							<a href="#blog_boba">
+								<div>
+									<h3>Boba</h3>
+								</div>
+							</a>
+							<hr>
+
 						</article>
+
+						<article id="cities">
+							<a href="city_1">
+								<h3>New York</h3>
+							</a>
+							<a href="city_2">
+								<h3>Falmouth, MA</h3>
+							</a>
+							<a href="city_3">
+								<h3>Boston</h3>
+							</a>
+							<a href="city_4">
+								<h3>Chicago</h3>
+							</a>
+							<a href="city_5">
+								<h3>Salt Lake City</h3>
+							</a>
+							<a href="city_6">
+								<h3>Seattle</h3>
+							</a>
+							<a href="city_7">
+								<h3>San Jose</h3>
+							</a>
+						</article>
+
+						<article id="city_1">
+							<h2 class="major">New York</h2>
+						</article>
+						<article id="city_2">
+							<h2 class="major">Falmouth, MA</h2>
+						</article>
+						<article id="city_3">
+							<h2 class="major">Boston</h2>
+						</article>
+						<article id="city_4">
+							<h2 class="major">Chicago</h2>
+						</article>
+						<article id="city_5">
+							<h2 class="major">Salt Lake City</h2>
+						</article>
+						<article id="city_6">
+							<h2 class="major">Seattle</h2>
+						</article>
+						<article id="city_7">
+							<h2 class="major">San Jose</h2>
+						</article>
+
+
+
 					</div>
 
 				<!-- Footer -->
