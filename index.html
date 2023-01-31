@@ -377,6 +377,366 @@
 							<a href="city_2">
 								<h3>Falmouth, MA</h3>
 							</a>
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lawrence Tang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Lawrence Tang</h1>
+								<p>I like to code and try new things.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#experiences">Experiences</a></li>
+								<li><a href="#hobbies">Hobbies</a></li>
+								<li><a href="#projects">Side Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/explore.jpg" alt="" loading="lazy"/></span>
+								<p>My name is Lawrence, and I'm a third year computer science and math student at the University of Chicago. I've lived in Cape Cod, Massachusetts for most of my life, but I've also spent time in Evanston, St. Paul, and Berkeley. I love to program, travel, watch TV, play sports, and much more! I hope to go into software engineering and maybe launch a few startups in the future! More importantly, I want to stay healthy and have caring and supportive friends and family. Click on the other tabs to learn more about me.
+							</article>
+
+						<!-- My Experiences -->
+							<article id="experiences">
+								<h2 class="major">Experiences</h2>
+								<a>
+									<span class="image main"><img src="images/uchicago.jpg" alt="" loading="lazy"/></span>
+									<h3>Course Grader</h3>
+									<p>Graded the Java Programming master’s course (MPCS 51036)</p>
+								</a>
+								<hr>
+								<a href="#experience_3">
+									<span class="image main"><img src="images/hpe.png" alt="" loading="lazy"/></span>
+									<h3>Hewlett-Packard Enterprise</h3>
+									<p>Worked on a Kubernetees microservice written with Java that manages SaaS subscriptions.</p>
+								</a>
+								<hr>
+								<a href="#experience_2">
+									<span class="image main"><img src="images/argonne.jpg" alt="" loading="lazy"/></span>
+									<h3>Argonne National Laboratory</h3>
+									<p>Demonstrated the capabilities of a robot to automate chemical experiments in a simulated environment.</p>
+								</a>
+								<hr>
+								<a href="#experience_1">
+									<span class="image main"><img src="images/uchicago.jpg" alt="" loading="lazy"/></span>
+									<h3>The HRI Lab at the University of Chicago</h3>
+									<p>Programmed robots using standards of human-robotic interaction research.</p>
+								</a>
+							</article>
+
+							<article id="experience_3">
+								<h2 class="major">Hewlett Packard Enterprise</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Java</li>
+									<li>Kubernetes</li>
+									<li>Github Workflows</li>
+									<li>Agile Development</li>
+								</ul>
+								<p>At Hewlett Packard Enterprise (HPE), I developed production code for a Kubernetes microservice on an agile team. I had the full responsibility of a regular member of the team, meaning that I attended standup meetings every other morning and was responsible for working on multiple projects simultaneously.</p>
+
+								<p>This involved good prioritization and time management. There were times when I was stuck on a project or was waiting on a response from my teammate, and I worked on other projects during this time so that I could remain productive.</p>
+
+								<p>I also took initiative. At the beginning of the internship, I proactively reached out to IT when I hadn’t received my laptop so that I could get started as soon as possible. When I was waiting to hear back on all of my projects, I asked my manager for a new assignment. Towards the end of my internship, I dedicated a lot of time to writing documentation so that my team would be able to easily understand my work without my assistance after I left the company. </p>
+
+								<p>I worked on projects that included developing a GitHub workflow that displayed the test coverage of the codebase, writing a program that checks for errors in the microservice databases, deploying a Grafana dashboard and adding new Prometheus metrics to be displayed in the dashboard, and adding new parameters to the REST APIs of the microservice. </p>
+
+								<p>There were many steps involved in getting code to production. I wrote unit tests for all my code, as that was a standard that my team upheld. I then deployed my code to test servers using Jenkins. I often viewed the logs of the test servers using a tool called Humio to make sure that my code was functioning correctly. I would also verify the data in the SQL databases of the test servers. After deploying to test servers, I would create a merge request from my branch to the main branch, with comments explaining the changes and showing that my code was working in the test servers. My teammates would review my merge request. If they approved it, it would get merged to the main branch and then go into the pipeline to production, which I wasn’t involved in. If they didn’t approve it, they gave feedback on my code, and I would incorporate the feedback by making changes and resubmit a merge request. Sometimes, there were bugs that would make their way to production, and in this case, I would have to revert the merge and make a new merge when I fixed the code.</p>
+
+								<p>I learned a lot about the development process at large companies in the software industry during my time at HPE.</p>
+
+							</article>
+
+							<article id="experience_2">
+								<h2 class="major">Argonne National Laboratory</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>ROS</li>
+									<li>Python</li>
+									<li>Gazebo Simulations</li>
+									<li>MoveIt Motion Planning</li>
+								</ul>
+								<video controls preload="none" style="object-fit: contain; width: 100%; height: 100%" poster="images/simulation_tools_Moment.jpg"><source src="images/simulation_tools.mp4" type="video/mp4"></video>
+								<p>At Argonne, I worked with Dr. Young Soo Park and PhD student Derek Vasquez to develop and program a robot in a Gazebo simulation. The simulation was the first step in a project to use a real life version of the robot to automate chemical experiments in a laboratory.</p>
+								<p>There were many pieces that I had to put together in order to program a working robot in the simulation. First, I had to construct a URDF model of the robot which specifies the visual appearance and collision bounding boxes of the robot. I added transmissions and controllers to allow the robot to be controlled in Gazebo by publishing to ROS topics. I used MoveIt for inverse kinematics that allowed the arm to be positioned easily. I also integrated a library that allowed the robot to navigate and map terrain using its 3D sensors. I used a computer vision library to enable the robot to locate objects with AR tags on them. The gripper presented issues with picking up items because friction is finicky in Gazebo, so I used another library to programmatically attach the gripper to items to pick them up. In the end, I was able to program the robot to locate and pick up objects in the simulation, which was an important step towards automation with the robot in a real life laboratory. My team was able to use the simulation to test procedures before running them in real life.</p>
+								<p>I learned a lot about good coding practices during this experience. I wrote detailed documentation so that researchers without much experience with robotics could adapt my project to their own purposes. I learned from Dr. Park the standard practices of organizing files and directories of robotics projects. </p>
+								<p>I also briefly worked with using machine learning to compute the effectiveness of catalysts. This was done by running a Mask R-CNN model on images of bubbles that were produced in chemical reactions in order to compute their size and quantity. Larger, greater quantity bubbles signified more effective catalysts. I worked with graphing the testing and training loss of the model and determining how they varied with the training set size and number of epochs trained.</p>
+								<p>My experience at Argonne was eye-opening because I got hands-on experience applying computer science to different areas of scientific research. I also learned that the field of robotics is extremely complex and well-developed.</p>
+								<span class="image main"><img src="images/arm.png" loading="lazy"/></span>
+							</article>
+
+							<article id="experience_1">
+								<h2 class="major">The HRI Lab at UChicago</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>ROS</li>
+									<li>Python</li>
+								</ul>
+								<video controls preload="none" style="object-fit: contain; width: 100%; height: 100%" poster="images/vector_Moment.jpg"><source src="images/vector.mp4" type="video/mp4"></video>
+								<p> My first formal research experience was in my first year of college at the <a href="https://hri.cs.uchicago.edu/people.html">Human-Robotic Interaction (HRI) Lab</a> at UChicago. I found out about the position from an email on a mailing list that said they were a new lab looking for research assistants to program robots. Because I had some spare time on my hands outside of classes, I emailed the PI of the lab, Sarah Sebo, saying that I was interested in the position and qualified myself by saying I had experience working on computer vision in robots. What I didn’t realize is that robotics is a huge subfield of computer science that makes use of many tools that I did not know yet. </p>
+								<p>The first project involved creating a ROS wrapper around an API used to control Anki’s Vector—a cute robot with a little forklift that can move around and a screen to display facial expressions. I had never even heard of ROS before, so I was worried about being able to contribute. Fortunately, I had a coworker, <a href="https://spencerng.me/">Spencer Ng</a>, who seemed to be a ROS veteran (and expert at programming in general). After he, Sarah, and I had our first lab meeting, I took initiative and asked Spencer if we could have a chat. We talked a bit and arranged times where we could call and work on the project together. I was always a step behind what he did, but he helped me learn the foundations of ROS. He also showed me how to document work in a readme using Markdown, and many other important conventions that come with working on a team. He did the brute of the work, but I made sure to check over what he did and made a few commits to the project repository to make Sarah happy. </p>
+								<p>Over the rest of the year, I gained confidence in my ROS skills. I was able to work individually on writing a ROS wrapper for the Misty robot by Misty Robotics. When I had trouble accessing Misty’s audio input, I narrowed the problem down to a hardware issue. I contacted Misty Robotics about this, and I had a Zoom call with some of their developers to inspect Misty’s hardware. When the problem was still not fixed, I helped connect Sarah to Misty’s team and arrange to return Misty to get it repaired. I was able to make many contributions to the lab later in the year.</p>
+								<p>My work at the HRI lab showed me how important it was to communicate in order to get help. Even though I wasn’t able to contribute to the lab much right away, by communicating with Spencer, I was able to learn from him so I was eventually able to do projects on my own. I also learned that I can grow immensely in just one year. Spencer was only one year ahead of me, but he seemed to be so much more knowledgeable. If a year ago, I saw myself now, I think it’s quite possible that I would’ve been just as amazed. In just the span of one year, I’ve grown so much, making me realize that even when some people seem so much more accomplished or experienced than me, that’s just me in a couple of years as long as I work towards my goals. Finally, maybe the coolest thing about working at the HRI lab was that I got to take Vector to my dorm, where he was quite a sensation with my friends!</p>
+								<span class="image main"><img src="images/hri.jpg" alt="" loading="lazy"/></span>
+							</article>
+
+						<!-- Side Projects -->
+							<article id="projects">
+								<h2 class="major">Side Projects</h2>
+								<a href="#project_4">
+									<div>
+										<span class="image main"><img src="images/distance_measurement.jpg" alt="" loading="lazy"/></span>
+										<h3>Distance Measurement w/ Camera</h3>
+										<p>An Android app that measures distances with the stereo camera.</p>
+									</div>
+								</a>
+								<hr>
+								<a href="#project_6">
+									<div>
+										<span class="image main"><img src="images/rogue.png" alt="" loading="lazy"/></span>
+										<h3>Rogue Research</h3>
+										<p>A Wordpress website built for a freelance gig.</p>
+									</div>
+								</a>
+								<hr>
+								<a target="_blank" href="http://productive-cs-students.herokuapp.com/">
+									<div>
+										<span class="image main"><img src="images/fenyx.jpg" alt="" loading="lazy"/></span>
+										<h3>Fenyx</h3>
+										<p>A website that alows students in the same classes to connect with each other.</p>
+									</div>
+								</a>
+								<hr>
+								<a href="#project_3">
+									<div>
+										<span class="image main"><img src="images/beat_uncropped.png" alt="" loading="lazy"/></span>
+										<h3>Beat the Market</h3>
+										<p>An online stock market simulator using historical data. Also comes with automated trading algorithms.</p>
+									</div>
+								</a>
+								<hr>
+								<a href="#project_2">
+									<div>
+										<span class="image main"><img src="images/popula.jpeg" alt="" loading="lazy"/></span>
+										<h3>Popula</h3>
+										<p>An Android app that sends customizable and randomly generated notifications, available in the Google Play Store.</p>
+									</div>
+								</a>
+								<hr>
+								<a href="#project_1">
+									<div>
+										<span class="image main"><img src="images/chess_uncropped.png" alt="" loading="lazy"/></span>
+										<h3>Chess Engine</h3>	
+										<p>A chess engine implementing minimax search, written from scratch in Java.</p>
+									</div>
+								</a>					
+							</article>
+
+							<article id="project_1">
+								<h2 class="major">Chess Engine</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Java</li>
+								</ul>
+								<video controls preload="none" style="object-fit: contain; width: 100%; height: 100%"><source src="images/chess.mp4" type="video/mp4"></video>
+								<p>A few years ago, I was really into chess. A friend told me that he made a chess game that let two people play each other in chess, and I decided that I had to one-up him by making a chess engine that searched for an optimal move on top of a playable chess game. To do this, I started out by writing the game rule engine that determines which moves are viable. This was actually very complicated due to rules like en passant, checks, and castling. Then, I wrote the graphics interface using the Java graphics library and made it responsive to clicks from the user. Then, I wrote a minimax search algorithm using the game rule engine to find valid moves and an evaluation function that adds up the values of one player’s pieces and subtracts the values of the opponent’s pieces, giving higher weight to pieces in the center of the board. The engine wasn’t very efficient and could only search around five moves ahead in a reasonable time, but it could beat most of my friends, and it was really cool that it was able to see many good moves that I missed.</p>
+							</article>
+
+							<article id="project_2">
+								<h2 class="major">Popula</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Android App Development</li>
+									<li>Java</li>
+								</ul>
+								<image src="images/popula.jpg" align="right" height="600"></image>
+								<p>Available in the <a href="https://play.google.com/store/apps/details?id=com.innovativeutilities.lawrence.popular">Google Play Store</a>.</p>
+								<p>When I attended an Android Development summer course, one of the ideas for an app that my instructor mentioned was a prank texting app that sent fake text notifications to the user. After I got home from the course, the first thing I did was make that exact prank texting app. It took an unexpectedly long time just to make a few app pages because I had to design the whole layout using XML, create event handlers for when the user quits out of the app, and learn how to send notifications. Creating Android apps involves learning many Android-specific things like the activity lifecycle that includes app quitting, startup, and pausing, the View class and all its subclasses which let you display to the screen, and saving app state when it is closed. I had to go through documentation of these concepts that made me confused and gave me headaches, but with enough experimentation, I got the app to work without any major bugs that I know of. I published it in the Google Play store, but I found that getting app downloads is a whole other problem. I don’t really have the marketing arsenal to get users without paying to advertise my app, and very few of my friends have Android phones. When you search up my app in the Play Store, it doesn’t show up! For now, I’ll be content with at least having an app published. </p>
+							
+							</article>
+
+							<article id="project_3">
+								<h2 class="major">Beat the Market</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+									<li>Flask backend framework</li>									
+								</ul>
+								<p><a href="https://beat-the-market.herokuapp.com/">https://beat-the-market.herokuapp.com/</a></p>
+								<p>I’ve recently been really interested in investing, in the stock market in particular. When I started out as an uneducated investor, I constantly heard about people making a career out of day trading, and I secretly aspired to be them because I wanted to be able to make a living by making a few clicks each day. I made the website to find out if you can actually make money by analyzing charts and using intuition to decide when to buy and sell. I also included some automated trading algorithms. To make the website, I had to relearn some skills from a web development course taught by David Malan at the Harvard Summer School that I had long forgotten. Some of these skills included programming the backend with Flask, making a page look good with HTML and CSS, and making buttons do things with JQuery. Programming a fully-fledged website involves bringing many skills together, and it’s not all that easy to do! The advantage of being able to make websites is that now I can create something that I can show off to almost everyone I know, unlike an Android app! </p>
+							</article>
+						
+							<article id="project_4">
+								<h2 class="major">Distance Measurement App</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Android App Development</li>
+									<li>Java</li>									
+								</ul>
+								<video controls preload="none" style="object-fit: contain; width: 100%; height: 100%"><source src="images/distance_measurement.mp4" type="video/mp4"></video>
+								<p>Available in the <a href="https://play.google.com/store/apps/details?id=com.lawrence.helloar">Google Play Store</a>.</p>
+								<p>I had been wanting to make an app that measures distances with a stereo camera for many years, and I finally got around to doing it. I downloaded a bunch of similar apps from the Play Store and found that none of them worked well, so I went ahead with the idea. It turned out that there was already a tutorial by Google that uses the ARCore library that already had most of the functionality I wanted, so I borrowed their code and made a few tweeks. It only took me a few hours to get the app running. I put together a basic app store profile for the app and published it in the Play Store.</p>
+								<p>It turns out the difficult part was actually getting downloads. After I had the app published in the Play Store for a while, it had downloads in the single digits. So I used my secret graphic design skills to whip up an app icon, wrote a complete description of the app, and added photos. Since then, it has gotten hundreds of downloads. More recently, I added a video demo of the app and an in-app popup that asks the user to review the app in the Play Store. </p>
+								<p>Trying to get downloads for this app was quite a learning experience. Even though my app is pretty trashy, with some effort on the marketing side (even with my basic level of ability) I was able to get a significant number of downloads. I don't want to put that much effort into marketing, so I might have to hire people for this in the future! </p>
+							</article>
+							<article id="project_5">
+								<h2 class="major">Fenyx</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>SQL</li>
+									<li>React</li>
+								</ul>
+
+							</article>
+
+							<article id="project_6">
+								<h2 class="major">Rogue Research</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Wordpress</li>
+								</ul>
+								<p><a href="https://rogue.re">https://rogue.re</a></p>
+								<p>After my friend told me about a freelancing website called Pangaea, I checked it out to look for some programming projects to fill my free time. Some of the positions paid pretty well, so I decided to apply for them. I was politely rejected from the first position I applied for, but to my surprise, I ended up getting the other one I applied for. My boss, Marcelo, gave me some content posted on a bare-bones HTML website and asked me to move it to a WordPress website. Even though I originally sought to gain experience in programming, this project was more art than programming. In fact, I wrote zero lines of code. The experience was a good way to pass time though. I didn't mind sitting there and clicking on a bunch of text boxes and copying text into them and making the colors and images look good. At least I can say that I changed the server the domain name was pointed to, which is kind of technical I guess! Now, I know that I can make WordPress websites pretty easily, which might come in handy now and again.</p>
+							</article>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="https://script.google.com/macros/s/AKfycbygsUjCvuI89PjLuAollbg3kapJ-g8DLfROnh0jusDXrIN8jHhX9D-5iAsHCcXdJWb1lQ/exec">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<div style="display:none" class="thankyou_message">Thanks for contacting me! I will get back to you soon!</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/lawrence-tang-156552190/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/lawrence.tang.9026/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/lawrenceztang/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/lawrenceztang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UCPvaeBkdc6rB9SrD9wRbdLA" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+								</ul>
+								<h3><a href="https://drive.google.com/file/d/1oQ9PJwOrQ7TpVDZhjvBJ4ud2iVjRvWzH/view?usp=sharing">Resume</a></h3>
+							</article>
+
+						<!-- Hobbies -->
+							<article id="hobbies">
+								<h2 class="major">Hobbies</h2>
+								<a href="#hobby_1">
+									<div>
+										<span class="image main"><img src="images/tennis.jpg" alt="" loading="lazy"/></span>
+										<h3>Athletics</h3>	
+									</div>
+								</a>	
+								<hr>
+								<a href="#hobby_2">
+									<div>
+										<span class="image main"><img src="images/IMG_0560.jpg" alt="" loading="lazy"/></span>
+										<h3>Travel</h3>	
+									</div>
+								</a>	
+								<hr>
+								<a href="#hobby_3">
+									<div>
+										<span class="image main"><img src="images/IMG_0598.jpg" alt="" loading="lazy"/></span>
+										<h3>Photography</h3>
+									</div>
+								</a>	
+							</article>
+
+							<article id="hobby_1">
+								<h2 class="major">Athletics</h2>
+								<p>I love to play tennis. I didn’t play in high school, but I regained interest in it when my brother and I played almost every day at the start of the COVID pandemic. We played more during the winter of that year—as long as it wasn’t snowing, we would hit in sub-freezing weather. In the summer of 2022 when I was in the Bay for an internship, I continued to play. I joined a Facebook group for tennis where there were more than enough people to hit with. It was really interesting meeting all these people, as many of them worked at tech companies, and I was able to hear about their experiences there.</p>
+								<p>I also like to participate in other sports like rock climbing, ice skating, and squash. I love to stay active. </p>
+							</article>
+							<article id="hobby_2">
+								<h2 class="major">Travel</h2>
+								<p>I love to travel. I think this has to do with my curiosity. I love to experience new cultures, landscapes, climates, plants, and animals. Some of my favorite places I have visited include Seattle, Shanghai, and Dakar. </p>
+								<p>I am studying abroad in Dakar, Senegal, as of the winter of 2022-2023. My experiences in Dakar have shown me an intriguing world that is completely different from the US. They have taught me to appreciate different cultures. However, I have seen how western influences are changing Dakar, and I hope increased globalization won't take away from the uniqueness of the culture here.</p>
+							</article>
+							<article id="hobby_3">
+								<h2 class="major">Photography</h2>
+								<p>I started doing photography over the summer, when my dad got me a DSLR camera for my birthday. As I started learning about photography, I realized there was much more complexity and nuance to it than I had previously thought, which sparked my interest, as I enjoy solving problems with many dimensions of complexity. In photography, these dimensions include the angle, zoom, distance from the subject (which affects the photo differently than zoom), f-stop, ISO, and lighting. I enjoy playing with these different parameters to find an appealing photo. Sometimes, there is a trade-off between these parameters, which I find interesting—for example, if you change the angle, sometimes the lighting isn’t as ideal.</p>
+								<p>See more photos <a href=https://www.instagram.com/ltangphotos/>here</a>.</p>
+								<span class="image main"><img src="images/photo_1.jpg" alt="" loading="lazy"/></span>
+								<span class="image main"><img src="images/photo_2.jpg" alt="" loading="lazy"/></span>
+							</article>
+
+							
+						<!-- Blog -->
+						<article id="blog">
+							<h2 class="major">Blog</h2>
+							<a href="#blog_cities">
+								<div>
+									<a href="#cities">
+										<h3>Cities</h3>
+									</a>
+								</div>
+							</a>
+							<hr>
+							<a href="#blog_boba">
+								<div>
+									<h3>Boba</h3>
+								</div>
+							</a>
+							<hr>
+
+						</article>
+
+						<article id="cities">
+							<a href="city_1">
+								<h3>New York</h3>
+							</a>
+							<a href="city_2">
+								<h3>Falmouth, MA</h3>
+							</a>
 							<a href="city_3">
 								<h3>Boston</h3>
 							</a>
@@ -422,7 +782,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Lawrence Tang.</p>
+						<p class="copyright">&copy; Lawrence Tang. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
