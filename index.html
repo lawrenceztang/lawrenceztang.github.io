@@ -96,17 +96,15 @@
 									<li>Humio Log Analysis</li>
 								</ul>
 								<span class="image main"><img src="images/hpe-page.png" alt="" loading="lazy"/></span>
-								<p>At Hewlett Packard Enterprise (HPE), I developed production code for a Kubernetes microservice on an agile team. I had the full responsibility of a regular member of the team, meaning that I attended standup meetings every other morning and was responsible for working on multiple projects simultaneously.</p>
+								<p>At Hewlett Packard Enterprise (HPE), I developed code for a Kubernetes microservice on an agile team. I had the full responsibility of a regular member of the team, meaning that I attended standup meetings every other morning and was responsible for working on multiple projects simultaneously. </p>
 
-								<p>This involved good prioritization and time management. There were times when I was stuck on a project or was waiting on a response from my teammate, and I worked on other projects during this time so that I could remain productive.</p>
-
-								<p>I also took initiative. At the beginning of the internship, I proactively reached out to IT when I hadn’t received my laptop so that I could get started as soon as possible. When I was waiting to hear back on all of my projects, I asked my manager for a new assignment. Towards the end of my internship, I dedicated a lot of time to writing documentation so that my team would be able to easily understand my work without my assistance after I left the company. </p>
+								<p>I took initiative in order to contribute as much as I could during my internship. At the beginning of the internship, I proactively reached out to IT when it was taking a long time to get my laptop. When I was waiting for an update on my projects and had nothing to work on, I asked my manager for a new assignment. Towards the end of my internship, I dedicated a lot of time to writing documentation so that my team could understand my code after I left.</p>
 
 								<p>I worked on projects that included developing a GitHub workflow that displayed the test coverage of the codebase, writing a program that checks for errors in the microservice databases, deploying a Grafana dashboard and adding new Prometheus metrics to be displayed in the dashboard, and adding new parameters to the REST APIs of the microservice. </p>
 
-								<p>There were many steps involved in getting code to production. I wrote unit tests for all my code, as that was a standard that my team upheld. I then deployed my code to test servers using Jenkins. I often viewed the logs of the test servers using a tool called Humio to make sure that my code was functioning correctly. I would also verify the data in the SQL databases of the test servers. After deploying to test servers, I would create a merge request from my branch to the main branch, with comments explaining the changes and showing that my code was working in the test servers. My teammates would review my merge request. If they approved it, it would get merged to the main branch and then go into the pipeline to production, which I wasn’t involved in. If they didn’t approve it, they gave feedback on my code, and I would incorporate the feedback by making changes and resubmit a merge request. Sometimes, there were bugs that would make their way to production, and in this case, I would have to revert the merge and make a new merge when I fixed the code.</p>
+								<p>There were many steps involved in getting code to production. I wrote unit tests for all my code. I then deployed my code to test servers using Jenkins. I viewed the logs using Humio and verified the data in the PostgreSQL databases of the test servers to make sure my code was functioning correctly. After testing my code, I created a merge request with comments explaining the changes and showing that my code was working. My teammates reviewed my merge requests, and they sometimes suggested changes that I implemented into my code. </p>
 
-								<p>I learned a lot about the development process at large companies in the software industry during my time at HPE.</p>
+								<p>I was able to contribute significantly to my team as I wrote over 1,000 lines of code that was deployed to production.</p>
 
 							</article>
 
@@ -155,27 +153,18 @@
 						<!-- Side Projects -->
 							<article id="projects">
 								<h2 class="major">Side Projects</h2>
+								<a href="#project_7">
+									<div>
+										<h3>Fashion Trend Detection</h3>
+										<p>Using deep learning to detect fashion trends.</p>
+									</div>
+								</a>
+								<hr>
 								<a href="#project_4">
 									<div>
 										<span class="image main"><img src="images/distance_measurement.jpg" alt="" loading="lazy"/></span>
 										<h3>Distance Measurement w/ Camera</h3>
 										<p>An Android app that measures distances with the stereo camera.</p>
-									</div>
-								</a>
-								<hr>
-								<a href="#project_6">
-									<div>
-										<span class="image main"><img src="images/rogue.png" alt="" loading="lazy"/></span>
-										<h3>Rogue Research</h3>
-										<p>A Wordpress website built for a freelance gig.</p>
-									</div>
-								</a>
-								<hr>
-								<a target="_blank" href="http://productive-cs-students.herokuapp.com/">
-									<div>
-										<span class="image main"><img src="images/fenyx.jpg" alt="" loading="lazy"/></span>
-										<h3>Fenyx</h3>
-										<p>A website that alows students in the same classes to connect with each other.</p>
 									</div>
 								</a>
 								<hr>
@@ -186,15 +175,31 @@
 										<p>An online stock market simulator using historical data. Also comes with automated trading algorithms.</p>
 									</div>
 								</a>
+<!--								<a href="#project_6">-->
+<!--									<div>-->
+<!--										<span class="image main"><img src="images/rogue.png" alt="" loading="lazy"/></span>-->
+<!--										<h3>Rogue Research</h3>-->
+<!--										<p>A Wordpress website built for a freelance gig.</p>-->
+<!--									</div>-->
+<!--								</a>-->
+<!--								<hr>-->
+<!--								<a target="_blank" href="http://productive-cs-students.herokuapp.com/">-->
+<!--									<div>-->
+<!--										<span class="image main"><img src="images/fenyx.jpg" alt="" loading="lazy"/></span>-->
+<!--										<h3>Fenyx</h3>-->
+<!--										<p>A website that alows students in the same classes to connect with each other.</p>-->
+<!--									</div>-->
+<!--								</a>-->
+<!--								<hr>-->
 								<hr>
-								<a href="#project_2">
-									<div>
-										<span class="image main"><img src="images/popula.jpeg" alt="" loading="lazy"/></span>
-										<h3>Popula</h3>
-										<p>An Android app that sends customizable and randomly generated notifications, available in the Google Play Store.</p>
-									</div>
-								</a>
-								<hr>
+<!--								<a href="#project_2">-->
+<!--									<div>-->
+<!--										<span class="image main"><img src="images/popula.jpeg" alt="" loading="lazy"/></span>-->
+<!--										<h3>Popula</h3>-->
+<!--										<p>An Android app that sends customizable and randomly generated notifications, available in the Google Play Store.</p>-->
+<!--									</div>-->
+<!--								</a>-->
+<!--								<hr>-->
 								<a href="#project_1">
 									<div>
 										<span class="image main"><img src="images/chess_uncropped.png" alt="" loading="lazy"/></span>
@@ -237,7 +242,10 @@
 									<li>Flask backend framework</li>									
 								</ul>
 								<p><a href="https://beat-the-market.herokuapp.com/">https://beat-the-market.herokuapp.com/</a></p>
-								<p>I’ve recently been really interested in investing, in the stock market in particular. When I started out as an uneducated investor, I constantly heard about people making a career out of day trading, and I secretly aspired to be them because I wanted to be able to make a living by making a few clicks each day. I made the website to find out if you can actually make money by analyzing charts and using intuition to decide when to buy and sell. I also included some automated trading algorithms. To make the website, I had to relearn some skills from a web development course taught by David Malan at the Harvard Summer School that I had long forgotten. Some of these skills included programming the backend with Flask, making a page look good with HTML and CSS, and making buttons do things with JQuery. Programming a fully-fledged website involves bringing many skills together, and it’s not all that easy to do! The advantage of being able to make websites is that now I can create something that I can show off to almost everyone I know, unlike an Android app! </p>
+								<p>I made a website that lets users test the legitimacy of day trading.</p>
+								<p>The first game, Beat the Market, allows users to trade a single stock using historical stock data. When the user enters the game, the client uses the Alpha Vantage API to fetch stock price data. 30 data points of stock data are displayed in a graph using ChartJS. Using the setInterval() method, a function that updates the stock graph and displayed metrics is called every second. I separated the code for the engine which does calculations from the code that updates the display. I also wrote a method for buying and selling the stock and getting its price. This allowed me to easily implement automated trading algorithms by calling these methods.</p>
+								<p>The second game, Odd One Out, allows the user to guess between real and fake graphs of stock data. For this game, data of multiple stock tickers is needed within a short time period, which the Alpha Vantage API prohibits. Thus, I used AJAX to fetch from a database of stock data stored in the backend, which was written in Flask. AJAX allowed the webpage to update smoothly without having to reload. </p>
+								<p>I created a reusable navigation bar that is displayed using Javascript. I also used CSS and HTML techniques to organize the layout in an appealing way. I was able to combine multiple tools in order to create a functioning website.</p>
 							</article>
 						
 							<article id="project_4">
@@ -245,13 +253,16 @@
 								<h3>Skills</h3>
 								<ul>
 									<li>Android App Development</li>
-									<li>Java</li>									
+									<li>Java</li>
+									<li>App Store Optimization</li>
+									<li>Graphic Design</li>
 								</ul>
 								<video controls preload="none" style="object-fit: contain; width: 100%; height: 100%"><source src="images/distance_measurement.mp4" type="video/mp4"></video>
 								<p>Available in the <a href="https://play.google.com/store/apps/details?id=com.lawrence.helloar">Google Play Store</a>.</p>
-								<p>I had been wanting to make an app that measures distances with a stereo camera for many years, and I finally got around to doing it. I downloaded a bunch of similar apps from the Play Store and found that none of them worked well, so I went ahead with the idea. It turned out that there was already a tutorial by Google that uses the ARCore library that already had most of the functionality I wanted, so I borrowed their code and made a few tweeks. It only took me a few hours to get the app running. I put together a basic app store profile for the app and published it in the Play Store.</p>
-								<p>It turns out the difficult part was actually getting downloads. After I had the app published in the Play Store for a while, it had downloads in the single digits. So I used my secret graphic design skills to whip up an app icon, wrote a complete description of the app, and added photos. Since then, it has gotten hundreds of downloads. More recently, I added a video demo of the app and an in-app popup that asks the user to review the app in the Play Store. </p>
-								<p>Trying to get downloads for this app was quite a learning experience. Even though my app is pretty trashy, with some effort on the marketing side (even with my basic level of ability) I was able to get a significant number of downloads. I don't want to put that much effort into marketing, so I might have to hire people for this in the future! </p>
+								<p>I created and published an app in the Google Play Store with 1,000 downloads.</p>
+								<p>The app uses the Google ARCore library to measure the distance to objects with the phone camera.</p>
+								<p>Originally when I published the app, it received less than 10 downloads in a month. To increase downloads, I used AppRadar to perform App Store Optimization, which involved changing the app name, improving the description, creating a new app icon, and adding a video demo of the app. I also analyzed bug reports from user devices in order to fix bugs and added an in-app popup that asks the user to review the app and tested this feature with an internal testing release. In 6 months, my app obtained 1,000 downloads.</p>
+
 							</article>
 							<article id="project_5">
 								<h2 class="major">Fenyx</h2>
@@ -260,7 +271,6 @@
 									<li>SQL</li>
 									<li>React</li>
 								</ul>
-
 							</article>
 
 							<article id="project_6">
@@ -271,6 +281,21 @@
 								</ul>
 								<p><a href="https://rogue.re">https://rogue.re</a></p>
 								<p>After my friend told me about a freelancing website called Pangaea, I checked it out to look for some programming projects to fill my free time. Some of the positions paid pretty well, so I decided to apply for them. I was politely rejected from the first position I applied for, but to my surprise, I ended up getting the other one I applied for. My boss, Marcelo, gave me some content posted on a bare-bones HTML website and asked me to move it to a WordPress website. Even though I originally sought to gain experience in programming, this project was more art than programming. In fact, I wrote zero lines of code. The experience was a good way to pass time though. I didn't mind sitting there and clicking on a bunch of text boxes and copying text into them and making the colors and images look good. At least I can say that I changed the server the domain name was pointed to, which is kind of technical I guess! Now, I know that I can make WordPress websites pretty easily, which might come in handy now and again.</p>
+							</article>
+							<article id="project_7">
+								<h2 class="major">Fashion Trend Detection</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Keras</li>
+									<li>SLURM</li>
+									<li>GPU Computing</li>
+									<li>Cloud Computing</li>
+								</ul>
+								<p>I’m currently working on a project to detect fashion trends using deep learning models. This is done by using unsupervised classification of images of clothing items from Instagram posts and detecting changes in the frequency of items in each category over time. </p>
+								<p>First, I obtained a Keras implementation of the Mask R-CNN model pre-trained on clothing items. Using this model, I obtained 10,000 images of individual clothing items cropped from larger photos. Then, I used a Keras implementation of the SimCLR algorithm to conduct unsupervised clustering on these images of clothing items. At first, I tried to run the algorithm locally, but I was running out of space.</p>
+								<p>Thus, I used a node in a remote SLURM cluster with 60 GB of memory, which was able to store all 10,000 images at once. I accelerated training speed with a GTX 1080 TI GPU, but ran into problems with GPU memory, so I utilized Keras generators to load data onto the GPU in chunks. I trained for 8 hours on the GPU and displayed neighboring items of clothing, according to the model. The neighboring items of clothing often belong to the same category, so there is promise in this technique.</p>
+								<p>I am still working to complete this project.</p>
+
 							</article>
 						<!-- Contact -->
 							<article id="contact">
@@ -311,7 +336,7 @@
 								<h2 class="major">Hobbies</h2>
 								<a href="#hobby_1">
 									<div>
-										<span class="image main"><img src="images/tennis-edit.jpg" alt="" loading="lazy"/></span>
+										<span class="image main"><img src="images/tennis.JPG" alt="" loading="lazy"/></span>
 										<h3>Athletics</h3>	
 									</div>
 								</a>	
