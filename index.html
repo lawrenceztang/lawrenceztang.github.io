@@ -96,7 +96,7 @@
 									<li>Differential Privacy</li>
 								</ul>
 								<span class="image main"><img src="images/output.png" alt="" loading="lazy"/></span>
-								<p>I worked with Dr. Lingxiao Wang and the Toyota Technological Institute of Technology on a private federated machine learning algorithm. Dr. Wang developed the theoretical proofs of the privacy guarantee of the algorithm, while I ran experiments that demonstrate its efficacy. My role involved repurposing PyTorch code from other literature for our algorithm, as well as writing up the experiments section of the paper. We were accepted to the Privacy Regulation and Protection in Machine Learning Workshop at ICLR 24, and I presented our work at the workshop. We plan on submitting to a conference in the future.</p>
+								<p>I worked with Dr. Lingxiao Wang and the Toyota Technological Institute of Technology on a private federated machine learning algorithm. Dr. Wang developed the theoretical proofs of the privacy guarantee of the algorithm, while I ran experiments that demonstrate its efficacy. My role involved repurposing PyTorch code from other literature for our algorithm, as well as writing up the experiments section of the paper. I co-authored a paper that was accepted to the Privacy Regulation and Protection in Machine Learning Workshop at ICLR 24, and I presented our work at the workshop. We plan on submitting to a conference in the future.</p>
 
 							</article>
 
@@ -176,18 +176,18 @@
 						<!-- Side Projects -->
 							<article id="projects">
 								<h2 class="major">Side Projects</h2>
+								<a href="#project_9">
+									<div>
+										<h3>UChicagoGPT</h3>
+										<p>Fine-tuning Llama 3 on a subreddit.</p>
+									</div>
+								</a>
+								<hr>
 								<a href="#project_8">
 									<div>
 										<span class="image main"><img src="images/graphtex.png" alt="" loading="lazy"/></span>
 										<h3>GraphTex</h3>
 										<p>Converting hand-drawn graphs to LaTex code.</p>
-									</div>
-								</a>
-								<hr>
-								<a href="#project_7">
-									<div>
-										<h3>Fashion Trend Detection</h3>
-										<p>Using deep learning to detect fashion trends.</p>
 									</div>
 								</a>
 								<hr>
@@ -317,6 +317,24 @@
 								<span class="image main"><img src="images/graphtex.png" alt="" loading="lazy"/></span>
 								<p>For a hackathon last year, I worked on a project to convert images of hand-drawn graphs to LaTex code. We used a DETR object detection model to locate nodes and edges of a graph, and we fed the locations of the edges and nodes into an algorithm that outputs LaTex code. We put all this into the backend of a website. This project required putting together numerous parts: synthetically generating training data, training the DETR model, writing the algorithm that generates LaTex code, and creating the website backend and frontend. We did all of this in under 24 hours in a team of 4, which I believe is an extremely rapid pace.</p>
 								<p>I am especially proud of my individual contribution to the project. I started out writing code that synthetically generates training data using NetworkX. NetworkX generates images of graphs and outputs coordinates of nodes in the graph, but there is considerable difficulty into translating the coordinates into data that an objection detection model can train on. After finishing this, I assisted with the website frontend and backend, and wrote the algorithm that converts object detection results into LaTex code. Because of my rapid pace of development, I took significant ownership in this challenging project, and thus I am proud of my achievement. </p>
+							</article>
+
+							<article id="project_9">
+								<h2 class="major">UChicagoGPT</h2>
+								<h3>Skills</h3>
+								<ul>
+									<li>Hugging Face</li>
+								</ul>
+								<p>I fine-tuned Llama 3 on UChicago subreddit data. </p>
+
+								<p> The first step of this project involved creating a dataset for the model to train on. I was saved from having to scrape the subreddit because there are online databases of subreddit posts that I was able to download from. I used a tree data structure with a DFS and backtracking algorithm to format the data as user-agent conversations, because Reddit threads are in a tree-like structure. Once the dataset was created, I uploaded it to <a href="https://huggingface.co/datasets/lawrenceztang/uchicagoreddit">Hugging Face</a>.</p>
+
+								<p>Then, I used the Hugging Face TRL library to fine-tune Llama 3 on the data. I did this on a SLURM cluster with 4 A4000 GPUs in parallel. Here is the <a href="https://huggingface.co/lawrenceztang/uchicagogpt">trained model</a>.</p>
+
+								<p>I deployed the trained model on Runpod serverless, because serverless options are cost-effective for low-usage models. </p>
+
+								<p>The whole process of fine-tuning and deploying the model was extremely streamlined, showing me how efficient modern-day ML is. </p>
+
 							</article>
 
 							<article id="news">
